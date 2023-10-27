@@ -1,6 +1,6 @@
 *{  
-  margin: 0;
-  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 body{ 
@@ -11,17 +11,19 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  
 }
 
 body::before{
   content: "";
   width: 100%;
-  min-height: 300vh;
+  min-height: 250vh;
   position: absolute;
   top: 0;
   left: 0;
-  background:linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-  opacity: 0.3;
+  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+  opacity: 0.8;
   z-index: -1;
   
 }
@@ -33,34 +35,29 @@ body::before{
   justify-content: center;
   width: 300px;
   height: 300px;
-  margin: 0;
+  margin: 15px;  
   justify-content: center;
   border-radius: 1000px;
+
 }
 .nav-item{
   background-color: white;
   opacity: 0.6;
 }
-
-#caruselprincipal{
-margin: 0;
-padding:0;
-}
 .carousel-inner{
-  height: 50%;
+  margin: 20px;
 }
-.card{
-  display: inline-block;
-}
-
 footer{
   text-align: center;  
   margin: 0%;
   padding: 0%;
 }
 #creditos{
-  background-color: aliceblue; 
-  opacity: 0.8; 
+  color: white;
+  margin-top: 50px;
+  padding: 5px;
+  background-color: gray; 
+  opacity: 1; 
   justify-content: center;
   display: inline-block;
   font-size: medium;
