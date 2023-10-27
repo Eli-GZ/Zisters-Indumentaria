@@ -27,8 +27,7 @@ body::before{
 }
 
 .logo{
-  text-align: center;
-  
+  text-align: center;    
 }
 #logo-principal{
   justify-content: center;
@@ -36,16 +35,22 @@ body::before{
   height: 300px;
   margin: 0;
   justify-content: center;
+  border-radius: 1000px;
 }
-.carrucel{
-  
+.nav-item{
+  background-color: white;
+  opacity: 0.6;
 }
+
 #caruselprincipal{
 margin: 0;
 padding:0;
 }
 .carousel-inner{
   height: 50%;
+}
+.card{
+  display: inline-block;
 }
 
 footer{
@@ -54,7 +59,9 @@ footer{
   padding: 0%;
 }
 #creditos{
-  background-color: aliceblue;  
+  background-color: aliceblue; 
+  opacity: 0.8; 
   justify-content: center;
   display: inline-block;
+  font-size: medium;
 }
