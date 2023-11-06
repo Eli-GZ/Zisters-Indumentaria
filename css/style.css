@@ -18,7 +18,7 @@ body{
 body::before{
   content: "";
   width: 100%;
-  min-height:500vh;
+  min-height:280vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,6 +51,12 @@ a:visited {
 a:hover {
   color: black;
 }
+.Carrusel{
+  padding: 0%;
+  text-align: center;
+  justify-content: center;
+  
+}
 
 a:active {
   color:black;
@@ -58,9 +64,23 @@ a:active {
 .carousel-inner{
  justify-content: center;
  text-align: center;
- max-height: 400px;
-
+ max-height: 500px;
 }
+#Catalogo{
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  padding-left: 100px;
+}
+#Catalogo img{
+ 
+ height: 50%;
+ width: 50%;
+ justify-content: center;
+ text-align: center;
+ margin-left: 50px;
+}
+
 footer{
   text-align: center;  
   margin: 0%;
