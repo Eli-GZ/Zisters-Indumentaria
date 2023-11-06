@@ -1,7 +1,4 @@
-*{  
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 
 body{ 
   margin: 0;
@@ -27,45 +24,60 @@ body::before{
   z-index: -1;
   
 }
-
+.fondo{
+  justify-content: center;
+  text-align: center;
+}
 .logo{
-  text-align: center;    
+  text-align: center;   
+  justify-content: center; 
 }
 #logo-principal{
   justify-content: center;
   width: 300px;
   height: 300px;
   margin: 15px;  
-  justify-content: center;
   border-radius: 1000px;
 
+
 }
-.nav-item{
-  color: white;
-  opacity: 0.8;
+.menu{
+  text-align: center;
 }
-a:visited {
+.nav-item{  
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.8;  
+  margin:20px;
+  margin-top:0;
+  margin-bottom: 3px;
+}
+.nav-item a{
   color: black;
+  border-radius: 10px;
+}
+
+a:visited {
+ background-color: grey;
+ border-radius: 10px;
 }
 
 a:hover {
-  color: black;
-}
-.Carrusel{
-  padding: 0%;
-  text-align: center;
-  justify-content: center;
-  
+ color: white;
+ background-color: black;
+ border-radius: 10px;
 }
 
+
 a:active {
-  color:black;
+  color:gray;
+ background-color: grey;
+ border-radius: 10px;
 }
 .carousel-inner{
- justify-content: center;
- text-align: center;
- max-height: 500px;
+ max-height:400px;
 }
+
 #Catalogo{
   justify-content: center;
   text-align: center;
