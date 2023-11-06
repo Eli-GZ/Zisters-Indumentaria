@@ -18,7 +18,7 @@ body{
 body::before{
   content: "";
   width: 100%;
-  min-height: 250vh;
+  min-height:500vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,11 +41,25 @@ body::before{
 
 }
 .nav-item{
-  background-color: white;
-  opacity: 0.6;
+  color: white;
+  opacity: 0.8;
+}
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color:black;
 }
 .carousel-inner{
-  margin: 20px;
+ justify-content: center;
+ text-align: center;
+ max-height: 400px;
+
 }
 footer{
   text-align: center;  
