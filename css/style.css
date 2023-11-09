@@ -2,8 +2,8 @@
 
 body{ 
   margin: 0;
-  min-height: 100vh;
-  background-image:url(../img/Background.jpg);
+  min-height: 200vh;
+  /* background-image:url(../img/Background.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,12 +15,11 @@ body{
 body::before{
   content: "";
   width: 100%;
-  min-height:280vh;
+  min-height:250vh;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
-  opacity: 0.8;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);  opacity: 0.8;
   z-index: -1;
   
 }
@@ -31,6 +30,7 @@ body::before{
 .logo{
   text-align: center;   
   justify-content: center; 
+  
 }
 #logo-principal{
   justify-content: center;
@@ -38,7 +38,7 @@ body::before{
   height: 300px;
   margin: 15px;  
   border-radius: 1000px;
-
+  box-shadow: 0px 0px 20px 10px rgb(0, 0, 0)
 
 }
 .menu{
@@ -53,7 +53,7 @@ body::before{
   margin-bottom: 3px;
 }
 .nav-item a{
-  color: black;
+  color:black;
   border-radius: 10px;
 }
 
@@ -63,14 +63,14 @@ a:visited {
 }
 
 a:hover {
- color: white;
- background-color: black;
+ color: black;
+ background-color: white;
  border-radius: 10px;
 }
 
 
 a:active {
-  color:gray;
+  color:black;
  background-color: grey;
  border-radius: 10px;
 }
@@ -78,20 +78,21 @@ a:active {
  max-height:400px;
 }
 
-#Catalogo{
+#Catalogo{  
   justify-content: center;
   text-align: center;
   margin: 20px;
   padding-left: 100px;
 }
 #Catalogo img{
- 
  height: 50%;
  width: 50%;
  justify-content: center;
  text-align: center;
- margin-left: 50px;
+ margin-left: 50px; 
 }
+
+
 
 footer{
   text-align: center;  
