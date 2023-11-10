@@ -1,37 +1,22 @@
-
-
 body{ 
   min-height: 100%;
-  /* background-image:url(../img/Background.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
-/* 
-body::before{
-  content: "";
-  width: 100%;
-  min-height:250vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);  opacity: 0.8;
-  z-index: -1;
-  
-} */
+
+
 
 #logo-principal{
   float: inline-start;
-  width: 70px;
-  height: 70px; 
+  width: 80px;
+  height: 80px; 
   margin-top: 10px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border-radius: 1000px;
-  /* box-shadow: 0px 0px 10px 1px rgb(255, 255, 255); */
-
 }
 #menu{
   background: black;
@@ -43,17 +28,13 @@ body::before{
   margin-top:40px;
   margin-bottom: 10px;
 }
-.nav-item a{
-  color:black;
-}
-
-a:visited {
- background-color: grey; 
-}
-
 a:hover {
  color: black;
- background-color: white; 
+ background-color:rgb(230, 115, 134); 
+}
+a:active {
+  color:black;
+ background-color:rgb(230, 115, 134);
 }
 .carrito-icon{
   margin-left: 350px;
@@ -61,30 +42,45 @@ a:hover {
   max-width: 50px;
   max-height: 50px;
 }
-
-a:active {
-  color:black;
- background-color: grey;
+.carrito-icon:hover{
+  background-color:rgb(230, 115, 134);
 }
-.carousel-inner{
- max-height:400px;
+#dropdown-item:hover{
+  background-color:rgb(230, 115, 134);
+}
+.hero img{
+  height: 100%;
+  width: 100%;
+  
 }
 
-#Catalogo{  
-  justify-content: center;
+h4, h2, small, a{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.carousel{
+  width: 100%;
+  margin: 0px 0px;
+}
+@media(min-width:768px){
+  .carousel{
+    margin: 0px 60px;
+  }
+}
+
+.carousel h2{
+  font-size: 45px;
+  line-height: 38px;
+  padding-bottom: 50px;
+  opacity: .9;
+  text-transform: uppercase;
+  font-weight: 600px;
   text-align: center;
-  margin: 20px;
-  padding-left: 100px;
+  color: black;
 }
-#Catalogo img{
- height: 50%;
- width: 50%;
- justify-content: center;
- text-align: center;
- margin-left: 50px; 
-}
-
-
 
 footer{
   text-align: center;  
