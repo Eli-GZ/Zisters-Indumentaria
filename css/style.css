@@ -24,7 +24,7 @@ body{
   text-align: center;
 }
 .nav-item{  
-  margin:50px;
+  margin:10vh;
   margin-top:40px;
   margin-bottom: 10px;
 }
@@ -37,7 +37,7 @@ a:active {
  background-color:rgb(230, 115, 134);
 }
 .carrito-icon{
-  margin-left: 350px;
+  margin-left: 50vh;
   margin-top: 35px;
   max-width: 50px;
   max-height: 50px;
@@ -48,10 +48,14 @@ a:active {
 #dropdown-item:hover{
   background-color:rgb(230, 115, 134);
 }
+.hero{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .hero img{
   height: 100%;
   width: 100%;
-  
+  clip-path: inset(0 0 20% 0);
 }
 a{
   text-decoration: none;
