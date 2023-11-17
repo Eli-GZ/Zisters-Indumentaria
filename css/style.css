@@ -65,13 +65,14 @@ a{
 }
 
 figcaption{   
-  display: inline-block; 
+text-align: center;
   margin: 0;
   padding: 0;
-justify-content;
+
 }
 figcaption > img{  
   width: 500px;
+ 
 }
 
 footer{
