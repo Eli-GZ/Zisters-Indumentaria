@@ -1,12 +1,8 @@
 body{ 
-  min-height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;   
-  margin-left: 500px;
+  margin: 0;
+  padding: 0; 
 }
-
+/*MENU*/
 #logo-principal{
   float: inline-start;
   width: 100px;
@@ -15,68 +11,160 @@ body{
   border-radius: 1000px;
   box-shadow: 1px 1px 12px 1px black;
 }
-#menu{
-  background: linear-gradient(to top, #f799c8 0%, #f799c8 100%);; 
+#logo-principal:hover{
+  box-shadow: 1px 1px 20px 1px white;
 
 }
-.nav-item{  
-  margin:15vh;
-  margin-left: 150px;
-  margin-top:40px;
-  margin-bottom: 10px;
+header{
+  max-width: 100%; 
+  background-color: pink;
 }
-a:hover {
-  font-size: 28px;
-  transition: 0.3s;
- 
+.menu{ 
+  width: 100vh;
+  height: 13vh;  
 }
-nav{
-  background: linear-gradient(to top, #f799c8 0%, #f799c8 100%);;  
+ul{    
+  display: flex;
+  list-style: none;
+  
+}
+li{
+  margin: 3em 3% auto;
+}
+li>a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+ul>input{
+  margin:3rem 1% auto 85vh;
+  height: 3vh;
+}
+a:hover {  
+  border-color: black;  
+  color: white;
+  background-color: black;   
+  box-shadow: 1px 1px 1px 15px black;
+  border-radius: 1px;
+  transition: 0.4s;  
 }
 .carrito-icon{  
+  height: 4vh;
   display: inline-block;
-  margin:10px 20px 10px 10px; 
+  margin:6% 1px; 
   display: block;
 }
 .carrito-icon:hover{ 
-  margin-top: 20px;
-  width: 65px;
-  height: 65px;
-  transition: 0.3s;
+  
+  margin-top: 35px; 
+  height: 4vh;
+  transition: 0.4s;
 }
-.hero img{
-  margin: 0;
-  padding: 0;  
-  width: 180vh; 
+/*MENU*/
+/*CARRUCEL PRINCIPAL*/
+.container{ 
+  position: relative;
+  width: 100%;
+  height: 70vh; 
 }
-a{
-  text-decoration: none;
+.slider input{  
+  visibility: hidden;
+  display: none;
 }
-#carouselExample{
-  max-width: 65%;
-  max-height: 70%;
+.buttons{
+  position: absolute;
+  width: 100%;
   display: flex;
   justify-content: center;
-
+  bottom: 50px;
+  gap: 10px;
 }
-.img-fig{
- justify-content: center;
+.buttons label{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 1;
+  transition: 300ms ease-in-out;
 }
-.promo{
-  height: 100%;
+.buttons label:hover{
+  scale: 1.2;
+  opacity: 1;
 }
-section{
-  display:inline;
+.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3)
+{
+opacity: 1;
+scroll-margin: 1.2;
+width: 20px;
 }
-.d-block{
+.content{
+  margin-left: -35vh;
+  position: relative;
+  width: 500%;
+  display: flex;
+  transition: 400ms ease-in-out;
+}
+.firstslide,.secondslide,.thirdslide{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstslide>img{  
+ object-fit: cover;
+ width: 100%;
+ height: 100%; 
+}
+.secondslide>img{  
   object-fit: cover;
-  max-height:700px;
-  max-width:500px ;
-  min-width: 500px;
-  display: block;
+  width: 100%;
+  height: 100%;
+ 
+ }
+ .thirdslide>img{  
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
 }
 
+.slider input:nth-child(1):checked ~ .content{
+  left: 0;  
+}
+.slider input:nth-child(2):checked ~ .content{
+  left: -180%;
+ 
+}
+.slider input:nth-child(3):checked ~ .content{
+  left: -350%;
+}
+/*CARRUCEL PRINCIPAL*/
+/*TARJETAS GIGANTES*/
+#cards{  
+  width: 100vh;
+  background-color: aqua;
+}
 
+/*TARJETAS GIGANTES*/
+
+
+
+
+
+
+
+
+#carousel{
+    background-color:red;
+}
 footer{
   background:gray;
   text-align: center;  

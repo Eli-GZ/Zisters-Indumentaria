@@ -8,53 +8,54 @@
   <!--CSS-BOOSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="shortcut icon" href="./img/LOGO WHATSAPP-INSTA (1).png">
-
 </head>
+
 <body>
-
-<header class="menu-logo">
-    <div class="logo">
-     <img src="./img/LOGO WHATSAPP-INSTA (1).png" alt="logo-zisters" id="logo-principal">
-    </div>     
+<header>
+  <div class="logo">
+    <img src="./img/LOGO WHATSAPP-INSTA (1).png" alt="logo-zisters" id="logo-principal">
+    </div>  
+  <nav class="menu">         
+            <ul class="menu-nav">              
+                <li><a href="#">Destacado</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Nosotros</a></li>  
+                <input type="search">     
+              <img src="./img/carrito-de-compras.png" alt="" class="carrito-icon">
+            </ul>       
+    </nav>       
 </header>
-
-<nav>
-  <div id="menu">
-     <nav class="navbar navbar-expand-md bg-body-tertiary p-0 border-0 m-0 h4">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto mb-5 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-black" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black col-10" href="#">Sobre nosotros</a>
-            </li>            
-            <li class="nav-item">
-              <a class="nav-link text-black" href="#">Contactanos</a>
-            </li>
-          
-        </div>
-      </div>
-      <div>
-        <img src="./img/carrito-de-compras.png" alt="" class="carrito-icon">
-       </div>
-    </nav>
-    
-  </div>
-</nav>
-
 <main>
-  <section>
-  <div class="hero">
-    <img src="./img/Hero.png" alt="" class="miefecto">
+  <div class="container">
+    <div class="slider">
+      <input type="radio" name="slider" id="slideOne" checked>
+      <input type="radio" name="slider" id="slideTwo">
+      <input type="radio" name="slider" id="slideThree">
+
+      <div class="buttons">
+        <label for="slideOne"></label>
+        <label for="slideTwo"></label>
+        <label for="slideThree"></label>
+      </div>
+
+    <div class="content">
+      <div class="firstslide"><img src="/img/Hero1.jpg" alt=""></div>
+      <div class="secondslide"><img src="/img/Hero2.jpg" alt=""></div>
+      <div class="thirdslide"><img src="/img/Hero3.jpg" alt=""></div>
+    </div>
+    </div> 
   </div>
-  <section>
-<section>
-  <div id="carouselExample" class="carousel slide">
+
+<section id="cards">
+ <div class="div">Lorem, ipsum dolor.</div>
+ <div class="div">Lorem, ipsum dolor.</div>
+ <div class="div">Lorem, ipsum dolor.</div>
+ <div class="div">Lorem, ipsum dolor.</div>
+ <div class="div">Lorem, ipsum dolor.</div>
+</section>
+<section id="carousel">
+  <!-- <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="./img/r1.jpeg" class="d-block w-100" alt="...">
@@ -85,24 +86,15 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>    
-  </div>  
-  <figcaption class="img-fig">
-    <img src="./img/anuncio.jfif" alt="" class="promo">
-  </figcaption>
+  </div>   -->
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rem, esse asperiores amet labore nobis mollitia modi reprehenderit iste eum, animi vel, qui nisi necessitatibus? Ad vitae quaerat atque distinctio.</div>
 </section>
-
-
-
 </main>
 <footer>
 <h3 id="creditos">Zisters indumentaria 2023</h3>
 </footer>
-</div>
 
 <!--Javascript BOOTSTRAP-->
-<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-  <script src="./js/script.js"></script> 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
-  
+  <script src="./js/script.js"></script>  
  </body>
 </html>
