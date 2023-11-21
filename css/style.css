@@ -1,6 +1,7 @@
 body{ 
   margin: 0;
   padding: 0; 
+  overflow-x: hidden;
 }
 /*MENU*/
 #logo-principal{
@@ -10,6 +11,7 @@ body{
   margin:10px 10px 10px 10px;
   border-radius: 1000px;
   box-shadow: 1px 1px 12px 1px black;
+  cursor: pointer;
 }
 #logo-principal:hover{
   box-shadow: 1px 1px 20px 1px white;
@@ -50,7 +52,8 @@ a:hover {
   border-radius: 1px;
   transition: 0.4s;  
 }
-.carrito-icon{  
+.carrito-icon{
+  cursor: pointer;  
   height: 4vh;
   display: inline-block;
   margin:6% 1px; 
@@ -64,14 +67,15 @@ a:hover {
 }
 /*MENU*/
 /*CARRUCEL PRINCIPAL*/
-.container{ 
+.container{  
+  cursor: pointer;
   position: relative;
   width: 100%;
-  height: 70vh; 
+  height: 70vh;   
 }
 .slider input{  
   visibility: hidden;
-  display: none;
+  display: none; 
 }
 .buttons{
   position: absolute;
@@ -103,14 +107,14 @@ opacity: 1;
 scroll-margin: 1.2;
 width: 20px;
 }
-.content{
+.content{   
   margin-left: -35vh;
   position: relative;
   width: 500%;
   display: flex;
   transition: 400ms ease-in-out;
 }
-.firstslide,.secondslide,.thirdslide{
+.firstslide,.secondslide,.thirdslide{   
   position: relative;
   width: 100%;
   height: 70vh;
@@ -122,35 +126,54 @@ width: 20px;
  object-fit: cover;
  width: 100%;
  height: 100%; 
+ 
 }
 .secondslide>img{  
   object-fit: cover;
   width: 100%;
-  height: 100%;
- 
+  height: 100%;  
  }
  .thirdslide>img{  
   object-fit: cover;
   width: 100%;
   height: 100%;
-
 }
 
 .slider input:nth-child(1):checked ~ .content{
-  left: 0;  
+  left: 0;
+  
 }
 .slider input:nth-child(2):checked ~ .content{
-  left: -180%;
- 
+  left: -180%;  
 }
 .slider input:nth-child(3):checked ~ .content{
-  left: -350%;
+  left: -350%;  
 }
 /*CARRUCEL PRINCIPAL*/
 /*TARJETAS GIGANTES*/
-#cards{  
-  width: 100vh;
-  background-color: aqua;
+.cards{  
+  text-align: center;   
+  display: flex;
+  justify-content: center;  
+  width: 100%;
+  padding:0 10% 0 10% ;   
+}
+.div-card{  
+  display: inline-flex;
+  margin:0 0.1em 0.1em;
+  width: 50%;
+  height: 25vw; 
+}
+.div-card >img{
+ background-image: url(/img/card1.png);
+  object-fit: cover;
+  width: 100%;
+  cursor: pointer;
+}
+.img-card:hover{  
+  transition: 0.6s;
+ transform: scale(0.9);
+ 
 }
 
 /*TARJETAS GIGANTES*/
