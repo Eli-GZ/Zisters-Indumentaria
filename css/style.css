@@ -51,13 +51,13 @@ li>a{
  
   font-family: 'Indie Flower', cursive;
   color: black;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: bolder;
   text-decoration: none;
   white-space: nowrap;
 }
 ul>input{
-  margin:2rem 1% auto 49vh;
+  margin:2rem 1% auto 56vh;
   height: 3vh;
 }
 a:hover {  
