@@ -178,5 +178,7 @@ a:hover {
   opacity: 0.5;
   text-decoration: line-through;
 }
-
+.filtro{
+  display: none;
+}
 /*SLIDER*/

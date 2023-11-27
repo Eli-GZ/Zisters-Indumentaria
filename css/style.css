@@ -393,3 +393,6 @@ footer{
   display: inline-block;
   font-size: medium;
 }
+.filtro{
+  display: none;
+}
