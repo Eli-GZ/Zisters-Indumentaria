@@ -13,4 +13,4 @@ Project Zisters-indumetaria:
 HTML5,CSS3 and JAVASCRIPT
 E-commerce about a clothing store (Final project TECLAB institute)
 
-PAGINA/PAGE: https://eli-gz.github.io/zisters.github.io/
+PAGINA/PAGE: https://eli-gz.github.io/Zisters.github.io/
