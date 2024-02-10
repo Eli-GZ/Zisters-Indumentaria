@@ -162,9 +162,9 @@ a:hover {
 
 .div-card{  
   display: inline-flex;
-  margin:0.2em 0.2em 0.1em 0.1em;
-  width: 50vw;
+  width: 48%;
   height: 30vw; 
+  margin: 0.2%;
 }
 .div-card >img{
   object-fit: cover;
@@ -175,8 +175,7 @@ a:hover {
   font-family: fantasy;
   background-image: linear-gradient(to top, #ff9a9d7a 0%, #fecfef77 99%, #fecfef85 100%);
   position: absolute;
-  margin:0;
-  width: 40vw;
+  width: 39%;
   height: 30vw; 
   opacity: 0; 
   cursor: pointer;
