@@ -1,23 +1,21 @@
+html{
+  scroll-behavior: smooth; 
+  overflow-x: hidden; 
+}
 body{ 
   margin: 0;
-  padding: 0;   
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;  
-}
-html{
-  scroll-behavior: smooth;  
+  padding: 0; 
+  width: 100%;
+  height: 100vh;  
+  box-sizing:border-box; 
+  font-family: Inter,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 /*MENU*/
-#logo-principal{
-  float: inline-start;
-  width: 4vw;
-  height: 4vw; 
-  margin:0.5vw 10px 10px 10px;
-  border-radius: 1000px;
-  box-shadow: 1px 1px 12px 1px black;
+#logo-principal{ 
+  width: 4%;  
+  margin:0.5% 2% 2% 1%;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px 1px black;
   cursor: pointer; 
   z-index: 1000;
   position: fixed;
@@ -26,12 +24,15 @@ html{
   box-shadow: 1px 1px 10px 5px black;
 }
 header{
-  width: 100vw;
-   background-color: pink;
+  position: fixed;
+  z-index: 9999;
+  top: 0.1vh;
+  width: 100%;
+  background-color: pink;
 }
 .menu{ 
-  padding: 0 0 0 4%;
-  width: 100vw;
+  padding: 0 0 0 5%;
+  width: 100%;
   height: 10vh;
   position: fixed;
   z-index: 999;
@@ -43,19 +44,16 @@ ul{
   list-style: none;  
 }
 li{
-  margin: 1rem 2% auto;
+  margin: 1% 1.5% auto;
 }
-li>a{   
-  font-family: fantasy;
+li a{     
   color: black;
   font-size: 24px; 
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
 }
-ul>input{
-  margin:0.9rem 1% auto 36vw;
-  height: 1.5vw;
-}
+
 a:hover {  
   border-color: black;  
   color: white;
@@ -65,111 +63,92 @@ a:hover {
   transition: 0.4s;  
 }
 .search-icon{
+  position: fixed;
   cursor: pointer;  
-  height: 4vh;
-  display: inline-block;
-  margin:1vh -12vw; 
-  display: block;
+  width: 2%;  
+  top: 4vh;
+  left: 83%;
 }
-
+.menu input{
+  position: fixed;
+  width: 11%;  
+  height: 3vh;
+  top: 4.5vh;
+  left: 85%; 
+}
 .carrito-icon{
+  position: fixed;
   cursor: pointer;  
-  height: 4vh;
-  display: inline-block;
-  margin:1vh 22vw; 
-  display: block;
+  width: 2%;  
+  top: 4vh;
+  left: 96%;
 }
 .carrito-icon:hover{   
-  margin-top: 0vw; 
-  height: 4vh;
-  transition: 0.3s;
+  margin-top: -1vh;   
+  transition: 0.2s;
 }
 /*MENU*/
 
 /*CARRUCEL PRINCIPAL*/
-.container{  
-  margin-top: 4vw;  
+.project-container{  
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.project-card{
+  flex: 1 0 auto; 
+}
+
+.project-image{
+  border-radius: 5px;  
+
+  height: 100vh;
   cursor: pointer;
-  position: relative;
-  width: 55vw;  
+  overflow: hidden;
 }
-.slider input{  
-  visibility: hidden;
-  display: none; 
+.project-thumb{
+  width: 97%;
+  height: 100vh;
+  object-fit: cover;
 }
-.buttons{
-  position: absolute;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  bottom: 1vw;
-  gap: 10px;
-}
-.buttons label{
-  width: 1vw;
-  height: 1vw;
-  background-color: white;
-  border-radius: 50%;
-  opacity: 0.4;
-  cursor: pointer;
-  z-index: 1;
-  transition: 300ms ease-in-out;
-}
-.buttons label:hover{
-  scale: 1.5;
+
+.project-card:hover .card-btn{
   opacity: 1;
 }
-.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
-.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
-.slider input:nth-child(3):checked ~ .buttons label:nth-child(3)
-{
-opacity: 1;
-scroll-margin: 1.2;
-width: 20px;
+.card-btn:hover{
+  background-color: black;
+  color: white;
 }
-.content{   
-  margin-left: -10vh;
-  position: relative;
-  width: 600%;
+
+.pre-btn,.nxt-btn{  
+  border: none;
+  width: 5%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
   display: flex;
-  transition: 400ms ease-in-out;
-  
-}
-.firstslide,.secondslide,.thirdslide{   
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
-  
+  cursor: pointer;
+  z-index: 998;
 }
-.firstslide>img{  
- object-fit: cover;
- width: 100%;
- height: 100%; 
- 
-}
-.secondslide>img{  
-  object-fit: cover;
-  width: 100%;
-  height: 100%;  
- }
- .thirdslide>img{  
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.slider input:nth-child(1):checked ~ .content{
+.pre-btn{
   left: 0;
-  
+  transform: rotate(180deg);
 }
-.slider input:nth-child(2):checked ~ .content{
-  left: -200%;  
+.nxt-btn{
+  right: 0;
 }
-.slider input:nth-child(3):checked ~ .content{
-  left: -400%;  
+#hero-btn1 img,
+#hero-btn2 img{
+  opacity: 1;
 }
+#hero-btn1:hover img,
+#hero-btn2:hover img{ 
+  background-color: black;
+  border-radius: 50%;
+}
+
 /*CARRUCEL PRINCIPAL*/
 
 
@@ -228,7 +207,6 @@ width: 20px;
 }
 .product-category{
   font-size: 30px; 
-  font-family: fantasy;
   padding: 0 10vw;   
 }
 .product-container{
@@ -259,8 +237,7 @@ width: 20px;
   object-fit: cover;
 }
 .discount-tag{
-  font-size: 20px;
-  font-family: fantasy;
+  font-size: 20px; 
   position: absolute;
   background-color: white;
   padding: 5px;
@@ -295,7 +272,6 @@ width: 20px;
 }
 .product-info{
   font-size: 15px;  
-  font-family: fantasy;
   width: 100%;
   height:2vw;
   padding-top: 0px;
@@ -305,7 +281,6 @@ width: 20px;
 }
 
 .price{  
-  font-family: fantasy;
   top: 50vw;
   font-size: 25px;
 }
