@@ -350,17 +350,16 @@ a:hover {
 
 
 footer{
-  width: 100vw;
-  background:gray;
+  width: 100%;
+  background:black;
   text-align: center;  
   margin: 0%;
   padding: 0%;
 }
 #creditos{  
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 5px;
-  background-color: gray; 
   opacity: 1; 
   justify-content: center;
   display: inline-block;
