@@ -48,7 +48,7 @@ ul{
   list-style: none;  
 }
 li{
-  margin: 0.4% 1.5% auto;
+  margin: 1% 2% auto;
 }
 li a{     
   color: black;
@@ -92,20 +92,6 @@ a:hover {
   transition: 0.2s;
 }
 /*MENU*/
-
-/*CARRUCEL PRINCIPAL*/
-.carousel-inner{
-  position: absolute; 
- width: 100%;
-}
-.carousel-item{  
-height: 90vh;
-object-fit: cover;
-
-}
-
-/*CARRUCEL PRINCIPAL*/
-
 
 /*TARJETAS GIGANTES*/
 .cards{        
@@ -164,13 +150,14 @@ object-fit: cover;
   padding: 0 10vw;   
 }
 .product-container{
-  padding: 0 10vw;
+  width: 80%;
+  margin:0% 0% 0% 10%;  
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
 .product-container::-webkit-scrollbar{
-  display: none;
+  display: none;  
 }
 .product-card{
   flex: 0 0 auto;
@@ -245,14 +232,11 @@ object-fit: cover;
 }
 .pre-btn,.nxt-btn{
   border: none;
+  background: none;
   width: 10vw;
   height: 100%;
   position: absolute;
   top: 0;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  background-color: white;
   cursor: pointer;
   z-index: 9;
 }
@@ -265,7 +249,9 @@ object-fit: cover;
 }
 .pre-btn img,
 .nxt-btn img{
-  opacity: 0.2;
+  border-radius: 50%;
+  opacity: 0.5;
+  background-color: black;
 }
 .pre-btn:hover img,
 .nxt-btn:hover img{
@@ -320,25 +306,22 @@ footer{
 }
 
 @media screen and (max-width:1440px){  
-.product-container{
-
-}
-
-  .hero-card{
-    width: 110%;
+  .capa{
+    width:38.5%;
+    height: 56vh; 
+  } 
+  .capa > h3{  
+    padding-top:20vh;  
   }
-  .hero-thumb{
-      width: 100%; 
-   
-  }
-   
 }
 
 @media screen and (max-width:900px){    
   #logo-principal{ 
     width: 6%;      
   } 
- 
+  li{
+    margin: 2% 2% auto;
+  }
   li a{  
   font-size: 20px; 
   }  
@@ -356,88 +339,140 @@ footer{
     width: 3%; 
     left: 95%;
   }
-/*Carrusel*/
-.main-carrusel{
- margin-left: 5%;
- padding: 0;
- width: 100%;
-}
-.product-container{
- max-width: 300%;
-  margin: 0;
-  padding: 0;
-}
-.project-card{
-  width:0%;
- margin: 0 auto; 
-}
-.project-image{
-  margin: 0 auto;
-}
-.project-thumb{
-height: 80vh;
-}
-.pre-btn,.nxt-btn{  
-  margin: 0;
-  padding: 0;
-  width: 1%;
-  height: 80vh;  
-  background:none;
-}
-.pre-btn{
-  margin-left:5%;
-}
-.nxt-btn{
-  margin-right:5%;
-}
 /*TARJETAS*/
-.cards{      
-  width: 100%;  
-  margin-left: 5%;
-  padding: 0;
+.cards{        
+  display: flex;
+ flex-direction: column;   
 }
 
 .div-card{  
   width: 100%;
+  height:50vh; 
+  margin: 0.2%;
 }
 .div-card >img{
+  object-fit: cover;
   width: 100%;
-  margin: 0 auto;
+  cursor: pointer;
 }
 .capa{
-  font-family: fantasy;
-  background-image: linear-gradient(to top, #ff9a9d7a 0%, #fecfef77 99%, #fecfef85 100%);
-  position: absolute;
-  width: 39%;
-  height: 63vh; 
-  opacity: 0; 
-  cursor: pointer;
-  z-index: 2; 
+  width: 80%;
+  height:50vh;  
 }
-.capa:hover{
-  transition:0.6s;
-  opacity: 0.9;
-  }
+
 .capa > h3{
-  border-color: white;
-  padding:6vw;
-  text-align: center; 
-  font-size: 100px;
-  color: rgb(0, 0, 0);
-
-}
-.product{
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  padding-top:20vh;
 }
 
+/*SLIDER*/
+.pre-btn{
+  left: 5%;
+
+}
+.nxt-btn{
+  right: 5%;
+}
+.product-category{
+text-align: center;  
+}
+.product-container{
+  width: 63%;
+  margin:0 auto;  
 }
 
 
-
+}
 
 @media screen and (max-width:400px){    
- 
+  #logo-principal{ 
+    display: none;     
+  } 
+  header{
+    width: auto;
+    height: 40vh; 
+    text-align: center;  
+    margin: 0 auto;
+  }
+  nav.menu{ 
+    margin: 0;
+    padding: 0;    
+    width: 100%;
+    height: 40vh;  
+    transition: top 0.3s ease;  
+  }
+  .hamburger{
+    width: 10%;
+    display:flex;
+    position: absolute;
+   left: 45%;
+   top:85% ;
+   cursor: pointer;
+  } 
+  ul{        
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  
+  }
+  .menu-nav{    
+    margin: 0;
+    padding: 0;
+  }
+  li{      
+    margin-top: 5%;
+  }
+  li a{  
+   
+  font-size: 20px; 
+  }  
+  .search-icon{
+    position: relative;
+    width: 6%;  
+    left: -30%;
+    top:4vh;
+  }
+  .menu input{
+    position: relative;
+    width: 30%;  
+    height: 2.5vh;
+    top:4.2vh;
+    left: 6%; 
+  }
+  .carrito-icon{  
+    position: relative; 
+    width: 6%; 
+    left: -2%;
+    top: 4vh;
+  }
+/*CARRUSEL*/
+.carousel-inner{
+  height: 100vh;
+}
 
+
+/*TARJETAS*/
+.cards{       
+  width: 100%;
+  padding: 0;    
+}
+.div-card{  
+  width: 100%;
+  height: 100vw; 
+  margin: 0.5%;
+}
+.capa{
+  width:100%;
+  height: 52vh; 
+
+}
+.capa > h3{
+  padding-top:20vh; 
+  font-size: 65px; 
+}
+.pre-btn{
+  left: 12%;
+}
+.nxt-btn{
+  right: 12%;
+}
 }
