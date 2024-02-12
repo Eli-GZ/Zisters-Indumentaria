@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   hamburgerBtn.addEventListener('click', function() {
     if (!hamOn) {
       mobileMenu.classList.toggle('hide');
-      mobileMenu.style.top = (mobileMenu.style.top === "0px") ? "-35vh" : "0";
+      mobileMenu.style.top = (mobileMenu.style.top === "0px") ? "-42vh" : "0";
 
       // Cambiar el ícono del menú hamburguesa cuando se muestra el menú
       hamburgerBtn.classList.toggle('open');

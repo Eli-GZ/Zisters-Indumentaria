@@ -347,7 +347,7 @@ footer{
 
 .div-card{  
   width: 100%;
-  height:50vh; 
+  height:40vh; 
   margin: 0.2%;
 }
 .div-card >img{
@@ -379,8 +379,6 @@ text-align: center;
   width: 63%;
   margin:0 auto;  
 }
-
-
 }
 @media screen and (max-width:720px){    
   #logo-principal{ 
@@ -461,11 +459,11 @@ text-align: center;
 }
 .capa{
   width:100%;
-  height: 52vh; 
+  height: 90vh; 
 
 }
 .capa > h3{
-  padding-top:20vh; 
+  padding-top:40vh; 
   font-size: 65px; 
 }
 .pre-btn{
