@@ -15,13 +15,25 @@
 }
 
 /*NAV*/
-nav{
-  background-color: pink;
+nav{ 
+  background-color: pink;  
+}
+.navbar-brand img{
+border-radius: 50%; 
+ width:100px; 
+ margin-right: 1rem;
 }
 .navbar a{
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px; 
 }
+.navbar a:hover{
+  font-weight: 800; 
+}
+.navbar-toggler:hover{
+border: 2px solid black;
+}
+
 /*NAV*/
 
 /*CARRUSEL*/
@@ -132,8 +144,8 @@ nav{
 /*CARDS*/
 /*BANNER*/
 .banner{
-  padding: 50px 0;
-  margin-bottom: 80px;
+  padding: 0px 0;
+  margin-bottom: 0px;
   background-color: rgba(255, 122, 175, 0.858);
 }
 .banner h2{
@@ -148,6 +160,7 @@ nav{
 /*BANNER*/
 
 @media (max-width:767px) {
+  
   .carousel-item{
     min-height: 500px;
   }
