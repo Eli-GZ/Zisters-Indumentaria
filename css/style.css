@@ -227,6 +227,13 @@ ul{
 footer{
   font-size: 20px;
 }
+
+
+@media (max-width: 1700px) { 
+  .carousel-item{    
+    max-height: 800px;   
+  }
+}
 @media (max-width: 1399.98px) { 
   .card-prd img{
    width: 250px;
