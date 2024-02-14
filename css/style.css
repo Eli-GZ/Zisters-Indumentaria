@@ -192,7 +192,6 @@ ul{
    position: relative;
    top: 40%;
    opacity: 0.8;
-
  } 
  .bg-card6{
   background-image:url(../img/card6.jpg);
@@ -227,6 +226,11 @@ ul{
 
 footer{
   font-size: 20px;
+}
+@media (max-width: 1399.98px) { 
+  .card-prd img{
+   width: 250px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -264,8 +268,15 @@ footer{
   }
 }
 
-@media (max-width: 575.98px) { 
-
+@media (max-width: 330px) { 
+  .card-body:hover::after{
+    font-family: fantasy;
+     font-size: 55px;     
+   } 
+  .card-bodysix:hover::after{
+    font-family: fantasy;
+     font-size: 60px;     
+   } 
  }
 
 
