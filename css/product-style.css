@@ -39,6 +39,14 @@ border: 2px solid black;
 ul{
   margin-top: 2%;
 }
+.form{
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+form button{
+  height: 40px;
+}
 
 /*NAV*/
 
@@ -62,6 +70,10 @@ ul{
   height: 300px;
   object-fit: cover;
   cursor: pointer;
+}
+
+.filtro{
+  display: none;
 }
 /*CARDS*/
 

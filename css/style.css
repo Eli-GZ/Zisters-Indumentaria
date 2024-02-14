@@ -223,6 +223,12 @@ ul{
   cursor: pointer;
 }
 /*CARDS*/
+#icons-contact{
+  width: 50px;   
+}
+.contact img{    
+  width: 800px;
+}
 
 footer{
   font-size: 20px;
@@ -246,7 +252,10 @@ footer{
      } 
   .navbar-toggler{
       margin-right:88% ;
-  }    
+  } 
+  .contact img{    
+    width: 700px;
+  }
 }
 
 @media (max-width:767px) { 
@@ -255,8 +264,7 @@ footer{
     } 
   .navbar-toggler{
     margin-right:85% ;
-  }
-  
+  }  
   .carousel-item{
     min-height: 500px;
   }
@@ -269,10 +277,11 @@ footer{
   }
   .product{
     padding: 30px 0;
+  } 
+  .contact img{    
+    width: 500px;
   }
-  .banner{
-    margin-bottom:30px ;
-  }
+
 }
 
 @media (max-width: 330px) { 
@@ -283,7 +292,8 @@ footer{
   .card-bodysix:hover::after{
     font-family: fantasy;
      font-size: 60px;     
-   } 
+   }   
+  .contact img{    
+    width: 300px;
+  }
  }
-
-
