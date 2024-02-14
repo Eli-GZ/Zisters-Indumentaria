@@ -7,7 +7,7 @@
   font-size: 20px;
   border: 1px solid black;
   color: black;
-  background-color: pink;
+  background-color: #ffc0cb;
 }
 .btn:hover{
   border:none;
@@ -16,22 +16,28 @@
 
 /*NAV*/
 nav{ 
-  background-color: pink;  
+  background-color: #ffc0cb;  
 }
-.navbar-brand img{
-border-radius: 50%; 
- width:100px; 
- margin-right: 1rem;
+.navbar-brand img{  
+margin-right: 1rem;
+ border-radius: 50%; 
+ width:90px;  
+ box-shadow: 1px 1px 10px 1px black;
 }
-.navbar a{
-  font-weight: 600;
+
+.navbar a{    
+  font-weight: 700;
   font-size: 25px; 
 }
-.navbar a:hover{
-  font-weight: 800; 
+.nav-link:hover{  
+  color: white;  
+  text-shadow: 1px 1px 10px black ;
 }
 .navbar-toggler:hover{
 border: 2px solid black;
+}
+ul{
+  margin-top: 2%;
 }
 
 /*NAV*/
@@ -49,8 +55,9 @@ border: 2px solid black;
 /*CARRUSEL*/
 
 /*BOX ICONS*/
+
 .box-icons img{
-  width: 10%;
+  width: 60px;
 }
 .box-icons h3{
   font-size: 25px;
@@ -64,65 +71,137 @@ border: 2px solid black;
 }
 .card-body{
   border-radius: 10px;
-  height: 400px;
+  height: 500px; 
+  cursor: pointer;
 }
+.card-body:hover::after{
+  font-family: fantasy;
+   font-size: 70px;  
+   content: "NOVEDADES"; 
+   position: relative;
+   top: 40%;
+   opacity: 0.8;
+ } 
 .bg-card1{
  height: 100%;
- background-image:url(/img/card1.jpg);
+ background-image:url(../img/card1.jpg);
  background-position: center center;
  background-repeat: no-repeat;
  background-size: cover;
 }
 .bg-card1:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(/img/card1.jpg);
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card1.jpg);  
 }
-
+.card-bodytwo{
+  border-radius: 10px;
+  height: 500px; 
+  cursor: pointer;
+}
+.card-bodytwo:hover::after{
+  font-family: fantasy;
+   font-size: 70px;  
+   content: "VERANO"; 
+   position: relative;
+   top: 40%;
+   opacity: 0.8;
+ } 
 .bg-card2{
-  background-image:url(/img/card2.jpg);
+  background-image:url(../img/card2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
  }
  .bg-card2:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(/img/card2.jpg);
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card2.jpg);
 }
-
+.card-bodythree{
+  border-radius: 10px;
+  height: 500px; 
+  cursor: pointer;
+}
+.card-bodythree:hover::after{
+  font-family: fantasy;
+   font-size: 70px;  
+   content: "JEANS"; 
+   position: relative;
+   top: 40%;
+   opacity: 0.8;
+ } 
  .bg-card3{
-  background-image:url(/img/card3.jpg);
+  background-image:url(../img/card3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
  }
  .bg-card3:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(/img/card3.jpg);
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card3.jpg);
 }
-
+.card-bodyfour{
+  border-radius: 10px;
+  height: 500px; 
+  cursor: pointer;
+}
+.card-bodyfour:hover::after{
+  font-family: fantasy;
+   font-size: 70px;  
+   content: "REMERAS"; 
+   position: relative;
+   top: 40%;
+   opacity: 0.8;
+ } 
  .bg-card4{
-  background-image:url(/img/card4.jpg);
+  background-image:url(../img/card4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
  }
  .bg-card4:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(/img/card4.jpg);
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card4.jpg);
 }
+.card-bodyfive{
+  border-radius: 10px;
+  height: 500px; 
+  cursor: pointer;
+}
+.card-bodyfive:hover::after{
+  font-family: fantasy;
+   font-size: 70px;  
+   content: "VESTIDOS"; 
+   position: relative;
+   top: 40%;
+   opacity: 0.8;
+ } 
  .bg-card5{
-  background-image:url(/img/card5.jpg);
+  background-image:url(../img/card5.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  
  }
  .bg-card5:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(/img/card5.jpg);
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card5.jpg);  
 }
+.card-bodysix{
+  border-radius: 10px;
+  height: 500px; 
+  cursor: pointer;
+}
+.card-bodysix:hover::after{
+  font-family: fantasy;
+   font-size: 70px;  
+   content: "DEPORTIVOS"; 
+   position: relative;
+   top: 40%;
+   opacity: 0.8;
+
+ } 
  .bg-card6{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.221),rgba(0, 0, 0, 0.113)),url(/img/card6.jpg);
+  background-image:url(../img/card6.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
  }
  .bg-card6:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(/img/card6.jpg);
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card6.jpg);
 }
 /*TARJETAS GIGANTES*/
 
@@ -133,6 +212,9 @@ border: 2px solid black;
 .card-prd{
   height: 600px;
 }
+.card-body2{
+  height: 200px;
+}
 
 .card-prd img{
   border-radius: 10px;
@@ -142,24 +224,27 @@ border: 2px solid black;
   cursor: pointer;
 }
 /*CARDS*/
-/*BANNER*/
-.banner{
-  padding: 0px 0;
-  margin-bottom: 0px;
-  background-color: rgba(255, 122, 175, 0.858);
-}
-.banner h2{
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-.banner img{
-  width: 500px;
-  border-radius: 20px;
-}
-/*BANNER*/
 
-@media (max-width:767px) {
+footer{
+  font-size: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-brand img{  
+    display: none;
+     } 
+  .navbar-toggler{
+      margin-right:88% ;
+  }    
+}
+
+@media (max-width:767px) { 
+  .navbar-brand img{  
+   display: none;
+    } 
+  .navbar-toggler{
+    margin-right:85% ;
+  }
   
   .carousel-item{
     min-height: 500px;
@@ -178,3 +263,9 @@ border: 2px solid black;
     margin-bottom:30px ;
   }
 }
+
+@media (max-width: 575.98px) { 
+  
+ }
+
+
