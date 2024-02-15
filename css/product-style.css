@@ -17,6 +17,7 @@
 /*NAV*/
 nav{ 
   background-color: #ffc0cb;  
+  box-shadow: 1px 1px 3px 1px black;
 }
 .navbar-brand img{  
 margin-right: 1rem;
