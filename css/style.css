@@ -21,7 +21,7 @@ nav{
 .navbar-brand img{  
 margin-right: 1rem;
  border-radius: 50%; 
- width:80px;  
+ width:70px;  
  box-shadow: 1px 1px 10px 1px black;
 }
 
@@ -45,7 +45,7 @@ ul{
 /*CARRUSEL*/
 .carousel-item{
   min-height: 400px;
-  max-height:1200px;
+ max-height:800px;
   object-fit: cover;
 }
 .carousel-caption{
