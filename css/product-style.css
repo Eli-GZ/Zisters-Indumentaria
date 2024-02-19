@@ -18,19 +18,17 @@
 nav{ 
   background-color: #ffc0cb;  
   box-shadow: 1px 1px 10px 1px black;
+  padding: 0;
 }
 .navbar-brand img{  
   border-radius: 50%; 
-  width:80px;  
+  width: 200px;;  
   margin-right:10px;
-  box-shadow: 1px 1px 3px 1px black;
-  object-fit: cover;
+ 
  }
-.navbar-brand span{
-  font-weight: 200;
-  font-family: fantasy; 
-  width:100px;   
-}
+ .navbar{
+   padding: 0;
+ }
 
 .navbar a{    
   font-weight: 700;
