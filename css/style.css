@@ -1,306 +1,373 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   font-family: "Poppins", sans-serif;
 }
-.btn{
+
+.btn {
   font-size: 20px;
   border: 1px solid black;
   color: black;
   background-color: #ffc0cb;
 }
-.btn:hover{
-  border:none;
+
+.btn:hover {
+  border: none;
   background-color: black;
 }
 
 /*NAV*/
-nav{ 
-  background-color: #ffc0cb;  
+nav {
+  background-color: #ffc0cb;
   box-shadow: 1px 1px 10px 1px black;
   padding: 0;
 }
-.navbar-brand img{  
- border-radius: 50%; 
- width: 200px;;  
- margin-right:10px;
+
+.navbar-brand img {
+  border-radius: 50%;
+  width: 200px;
+  ;
+  margin-right: 10px;
 
 }
-.navbar{
+
+.navbar {
   padding: 0;
 }
-.navbar a{    
+
+.navbar a {
   font-weight: 700;
-  font-size: 20px; 
+  font-size: 20px;
 }
-.nav-link:hover{  
-  color: white;  
-  text-shadow: 1px 1px 10px black ;
+
+.nav-link:hover {
+  color: white;
+  text-shadow: 1px 1px 10px black;
 }
-.navbar-toggler:hover{
-border: 2px solid black;
+
+.navbar-toggler:hover {
+  border: 2px solid black;
 }
 
 
 /*NAV*/
 
 /*CARRUSEL*/
-.carousel-item{
+.carousel-item {
   min-height: 400px;
- max-height:800px;
+  max-height: 800px;
   object-fit: cover;
 }
-.carousel-caption{
+
+.carousel-caption {
   bottom: 22px;
   z-index: 2;
 }
+
 /*CARRUSEL*/
 
 /*BOX ICONS*/
 
-.box-icons img{
+.box-icons img {
   width: 40px;
 }
-.box-icons h3{
+
+.box-icons h3 {
   font-size: 20px;
   font-weight: 800;
 }
+
 /*BOX ICONS*/
 
 /*TARJETAS GIGANTES*/
-.services{
-  padding: 80px 0;  
+.services {
+  padding: 80px 0;
 }
-.card-body{
+
+.card-body {
   border-radius: 10px;
-  height: 500px; 
+  height: 500px;
   cursor: pointer;
 }
-.card-body:hover::after{
+
+.card-body:hover::after {
   font-family: fantasy;
-   font-size: 70px;  
-   content: "NOVEDADES"; 
-   position: relative;
-   top: 40%;
-   opacity: 0.8;
- } 
-.bg-card1{
- height: 100%;
- background-image:url(../img/card1.jpg);
- background-position: center center;
- background-repeat: no-repeat;
- background-size: cover;
+  font-size: 70px;
+  content: "NOVEDADES";
+  position: relative;
+  top: 40%;
+  opacity: 0.8;
 }
-.bg-card1:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card1.jpg);  
-}
-.card-bodytwo{
-  border-radius: 10px;
-  height: 500px; 
-  cursor: pointer;
-}
-.card-bodytwo:hover::after{
-  font-family: fantasy;
-   font-size: 70px;  
-   content: "VERANO"; 
-   position: relative;
-   top: 40%;
-   opacity: 0.8;
- } 
-.bg-card2{
-  background-image:url(../img/card2.jpg);
+
+.bg-card1 {
+  height: 100%;
+  background-image: url(../img/card1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
- }
- .bg-card2:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card2.jpg);
 }
-.card-bodythree{
+
+.bg-card1:hover {
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%), url(../img/card1.jpg);
+}
+
+.card-bodytwo {
   border-radius: 10px;
-  height: 500px; 
+  height: 500px;
   cursor: pointer;
 }
-.card-bodythree:hover::after{
+
+.card-bodytwo:hover::after {
   font-family: fantasy;
-   font-size: 70px;  
-   content: "JEANS"; 
-   position: relative;
-   top: 40%;
-   opacity: 0.8;
- } 
- .bg-card3{
-  background-image:url(../img/card3.jpg);
+  font-size: 70px;
+  content: "VERANO";
+  position: relative;
+  top: 40%;
+  opacity: 0.8;
+}
+
+.bg-card2 {
+  background-image: url(../img/card2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
- }
- .bg-card3:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card3.jpg);
 }
-.card-bodyfour{
+
+.bg-card2:hover {
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%), url(../img/card2.jpg);
+}
+
+.card-bodythree {
   border-radius: 10px;
-  height: 500px; 
+  height: 500px;
   cursor: pointer;
 }
-.card-bodyfour:hover::after{
+
+.card-bodythree:hover::after {
   font-family: fantasy;
-   font-size: 70px;  
-   content: "REMERAS"; 
-   position: relative;
-   top: 40%;
-   opacity: 0.8;
- } 
- .bg-card4{
-  background-image:url(../img/card4.jpg);
+  font-size: 70px;
+  content: "JEANS";
+  position: relative;
+  top: 40%;
+  opacity: 0.8;
+}
+
+.bg-card3 {
+  background-image: url(../img/card3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
- }
- .bg-card4:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card4.jpg);
 }
-.card-bodyfive{
+
+.bg-card3:hover {
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%), url(../img/card3.jpg);
+}
+
+.card-bodyfour {
   border-radius: 10px;
-  height: 500px; 
+  height: 500px;
   cursor: pointer;
 }
-.card-bodyfive:hover::after{
+
+.card-bodyfour:hover::after {
   font-family: fantasy;
-   font-size: 70px;  
-   content: "VESTIDOS"; 
-   position: relative;
-   top: 40%;
-   opacity: 0.8;
- } 
- .bg-card5{
-  background-image:url(../img/card5.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;  
- }
- .bg-card5:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card5.jpg);  
+  font-size: 70px;
+  content: "REMERAS";
+  position: relative;
+  top: 40%;
+  opacity: 0.8;
 }
-.card-bodysix{
-  border-radius: 10px;
-  height: 500px; 
-  cursor: pointer;
-}
-.card-bodysix:hover::after{
-  font-family: fantasy;
-   font-size: 70px;  
-   content: "DEPORTIVOS"; 
-   position: relative;
-   top: 40%;
-   opacity: 0.8;
- } 
- .bg-card6{
-  background-image:url(../img/card6.jpg);
+
+.bg-card4 {
+  background-image: url(../img/card4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
- }
- .bg-card6:hover{
-  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%),url(../img/card6.jpg);
 }
+
+.bg-card4:hover {
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%), url(../img/card4.jpg);
+}
+
+.card-bodyfive {
+  border-radius: 10px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.card-bodyfive:hover::after {
+  font-family: fantasy;
+  font-size: 70px;
+  content: "VESTIDOS";
+  position: relative;
+  top: 40%;
+  opacity: 0.8;
+}
+
+.bg-card5 {
+  background-image: url(../img/card5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-card5:hover {
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%), url(../img/card5.jpg);
+}
+
+.card-bodysix {
+  border-radius: 10px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.card-bodysix:hover::after {
+  font-family: fantasy;
+  font-size: 70px;
+  content: "DEPORTIVOS";
+  position: relative;
+  top: 40%;
+  opacity: 0.8;
+}
+
+.bg-card6 {
+  background-image: url(../img/card6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-card6:hover {
+  background-image: linear-gradient(to top, #ff9a9d6d 0%, #fecfef5a 99%, #fecfef64 100%), url(../img/card6.jpg);
+}
+
 /*TARJETAS GIGANTES*/
 
 /*CARDS*/
-.product{
+.product {
   padding: 80px 0;
 }
-.card-prd{
+
+.card-prd {
   height: 600px;
 }
-.card-body2{
+
+.card-body2 {
   height: 200px;
 }
 
-.card-prd img{
+.card-prd img {
   border-radius: 5px;
-  width: 300px;  
+  width: 300px;
   height: 400px;
   object-fit: cover;
   cursor: pointer;
 }
+
 /*CARDS*/
-#icons-contact{
-  width: 50px;   
+#icons-contact {
+  width: 50px;
 }
-.contact img{    
+
+.contact img {
   width: 800px;
 }
 
-footer{
+footer {
   font-size: 20px;
 }
 
 
-@media (max-width: 1700px) { 
-  .carousel-item{    
-    max-height: 800px;   
+@media (max-width: 1700px) {
+  .carousel-item {
+    max-height: 800px;
   }
 }
-@media (max-width: 1399.98px) { 
-  .card-prd img{
-   width: 250px;
+
+@media (max-width: 1399.98px) {
+  .card-prd img {
+    width: 250px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .navbar-brand{  
+  .navbar-brand {
     display: none;
-     } 
-  .navbar-toggler{
-      margin-right:88% ;
-  } 
-  .contact img{    
+  }
+
+  .navbar-toggler {
+    margin-right: 88%;
+  }
+
+  .contact img {
     width: 700px;
   }
 }
 
-@media (max-width:767px) { 
-  .navbar-brand{  
-   display: none;
-    } 
-  .navbar-toggler{
-    margin-right:85% ;
-  }  
-  .carousel-item{
+@media (max-width:767px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-toggler {
+    margin-right: 85%;
+  }
+
+  .carousel-item {
     min-height: 500px;
   }
-  .carousel-item img{
+
+  .carousel-item img {
     height: 500px;
     object-fit: cover;
   }
-  .services{
+
+  .services {
     padding: 30px 0;
   }
-  .product{
+
+  .product {
     padding: 30px 0;
-  } 
-  .contact img{    
+  }
+
+  .contact img {
     width: 500px;
   }
 
 }
 
-@media (max-width: 330px) { 
-  .card-body:hover::after{
+@media (max-width: 400px) {
+  .send h3 {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+  }
+
+}
+
+@media (max-width: 330px) {
+  .card-body:hover::after {
     font-family: fantasy;
-     font-size: 55px;     
-   } 
-  .card-bodysix:hover::after{
+    font-size: 55px;
+  }
+
+  .card-bodysix:hover::after {
     font-family: fantasy;
-     font-size: 60px;     
-   }   
-  .contact img{    
+    font-size: 60px;
+  }
+
+  .contact img {
     width: 300px;
-  }  
- }
- @media (max-width: 300px) {  
-  .contact img{    
+  }
+
+  .send h3 {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact img {
     width: 250px;
   }
- }
+}
