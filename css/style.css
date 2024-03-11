@@ -339,7 +339,7 @@ footer {
 @media (max-width: 400px) {
   .card-body:hover::after {
     font-family: fantasy,"Poppins", sans-serif;
-    font-size: 55px;
+    font-size: 45px;
   }
 
   .card-bodysix:hover::after {
