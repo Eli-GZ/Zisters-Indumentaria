@@ -338,12 +338,12 @@ footer {
 
 @media (max-width: 400px) {
   .card-body:hover::after {
-    font-family: fantasy;
+    font-family: fantasy,"Poppins", sans-serif;
     font-size: 55px;
   }
 
   .card-bodysix:hover::after {
-    font-family: fantasy;
+    font-family: fantasy,"Poppins", sans-serif;
     font-size: 60px;
   }
 
@@ -355,12 +355,12 @@ footer {
 
 @media (max-width: 330px) {
   .card-body:hover::after {
-    font-family: fantasy;
+    font-family: fantasy,"Poppins", sans-serif;
     font-size: 55px;
   }
 
   .card-bodysix:hover::after {
-    font-family: fantasy;
+    font-family: fantasy,"Poppins", sans-serif;
     font-size: 60px;
   }
 
