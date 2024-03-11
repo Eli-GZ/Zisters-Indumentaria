@@ -337,10 +337,18 @@ footer {
 }
 
 @media (max-width: 400px) {
-  .send h3 {
-   display: flex;
-   justify-content: center;
-   text-align: center;
+  .card-body:hover::after {
+    font-family: fantasy;
+    font-size: 55px;
+  }
+
+  .card-bodysix:hover::after {
+    font-family: fantasy;
+    font-size: 60px;
+  }
+
+  .contact img {
+    width: 300px;
   }
 
 }
@@ -360,10 +368,6 @@ footer {
     width: 300px;
   }
 
-  .send h3 {
-    justify-content: center;
-    text-align: center;
-  }
 }
 
 @media (max-width: 300px) {
